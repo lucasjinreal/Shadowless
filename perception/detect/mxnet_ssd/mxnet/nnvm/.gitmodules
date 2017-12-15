@@ -1,0 +1,9 @@
+[submodule "plugin/nnvm-fusion"]
+	path = plugin/nnvm-fusion
+	url = https://github.com/dmlc/nnvm-fusion.git
+[submodule "dmlc-core"]
+	path = dmlc-core
+	url = https://github.com/dmlc/dmlc-core
+[submodule "tvm"]
+	path = tvm
+	url = https://github.com/dmlc/tvm

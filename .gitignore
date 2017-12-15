@@ -1,0 +1,6 @@
+perception/detect/mask_rcnn
+perception/detect/mxnet_ssd/model/ssd_resnet50_512-0000.params
+perception/detect/mxnet_ssd/model/ssd_resnet50_512-symbol.json
+results/
+.idea/
+videos/road_demo.mp4
