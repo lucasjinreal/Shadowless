@@ -38,7 +38,6 @@ To run *Shadowless* after you get all pre-requirements, you can simply do:
 
 ```
 python3 main.py
-
 ```
 this will start a *Shadowless* master process to serve camera inputs and do the perception jobs.
 
@@ -63,6 +62,6 @@ So much welcome the community contribute your code to *Shadowless*, we are now n
 
 
 
-##Copyright
+## Copyright
 
 this work inspired by Jin Fagang, you should not spread this soft-ware witout any guarantee, please using this under Apache License.
