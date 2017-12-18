@@ -12,10 +12,9 @@ class DetectManager(object):
         self.core = core
 
         if self.core == 'ssd':
-            # from .mxnet_ssd.mxnet_ssd_detector import MXNetSSDDetector
-            from .mxnet_ssd.demo import SSDDetector
+            from .mxnet_ssd.mxnet_ssd_detector import MXNetSSDDetector
             print('[DETECT] ssd backend.')
-            self.detector = SSDDetector()
+            self.detector = MXNetSSDDetector()
         elif self.core == 'mask-rcnn':
             from .mask_rcnn.mask_rcnn_detector import MaskRCNNDetector
             print('[DETECT] mask-rcnn backend.')

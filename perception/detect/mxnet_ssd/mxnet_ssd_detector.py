@@ -8,7 +8,6 @@ import os
 import sys
 from .detect.detector import Detector
 from .symbol.symbol_factory import get_symbol
-from .demo import detect_on_single_image
 
 
 class MXNetSSDDetector(object):
