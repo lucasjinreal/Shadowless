@@ -22,10 +22,18 @@ and you should download one video from Youtube or anywhere place it into: `video
 
 ```
 sudo pip3 install -r requirements.txt
-
 ```
 
+Please do 2 steps before you start running `python3 main.py`:
+
+- Download the pretrained model from [here](https://github.com/zhreshold/mxnet-ssd), currently you should download `Resnet-50 512x512`, directly download url is [here](https://github.com/zhreshold/mxnet-ssd/releases/download/v0.7-alpha/ssd_resnet50_512_voc0712trainval.zip), after downloaded untar it into mxnet_ssd/model dir;
+- You should install mxnet with the newest version.
+- Mask-RCNN backend for detection will release very soon
+
+
+
 ## Run
+
 To run *Shadowless* after you get all pre-requirements, you can simply do:
 
 ```
@@ -34,21 +42,27 @@ python3 main.py
 ```
 this will start a *Shadowless* master process to serve camera inputs and do the perception jobs.
 
-## Detection
-
-we are now deploy SSD and mask-rcnn and yolo-v2 on detection, it trains on a massive of coco image sets. It can
-detect on more than 90 object, and maybe even more in the future.
 
 
-## Segmentation
+## Contribute
 
-we now do segmentation based on mask-rcnn, this got a very good result now.
+So much welcome the community contribute your code to *Shadowless*, we are now need those features:
 
-## Lane Detect
+- [x] Detection with SSD
+- [x] Detection with FasterRCNN
+- [ ] Detection with RFCN
+- [x] Lane Segment using OpenCV
+- [ ] Lane Segment with DeepLearning methods
+- [ ] Distance estimate with Objects
 
-we now deploy lane detect in opencv methods.
+
+- [ ] Speed estimate with moving objects
 
 
-# Copyright
+- [ ] Accelerate whole networks to a real-time speed.
+
+
+
+##Copyright
 
 this work inspired by Jin Fagang, you should not spread this soft-ware witout any guarantee, please using this under Apache License.
